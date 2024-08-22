@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- o	Hãy trích xuất các thuộc tính "name", 
+     "email" và "city" và in ra màn hình console. -->
+
+     <script>
+        const dataJSON = `{
+        "name":"Le van A",
+        "age" : 20,
+        "email" : "LevanA@gmail",
+        "address":{
+            "street" : "so 123, duog ABC",
+            "city" : "Ha noi",
+            "country " : "Viet Nam" 
+        }
+     }`;
+
+     console.log(dataJSON);
+     const dataJsontoJS = JSON.parse(dataJSON);
+     console.log(dataJsontoJS.name);
+     console.log(dataJsontoJS.email);
+     console.log(dataJsontoJS.address.city);
+
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- o	Tạo một nút và sau một khoảng thời gian nút bấm sẽ thay đổi kích thước và màu sắc. -->
+     <style>
+        .button{
+            height: 30px;
+            width: 60px;
+            color: #fff;
+            background: #000;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+     </style>
+
+    <div class="button" id="button">
+        click me
+    </div>
+
+    <script>
+        const button = document.getElementById("button");
+        console.log(button);
+    
+            setTimeout(()=>{
+                button.style.width="200px";
+                button.style.height ="60px";
+                button.style.background="#5CB874";
+            },3000);
+    </script>
+</body>
+</html>

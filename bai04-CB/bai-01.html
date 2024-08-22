@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Đề bài:
+        //     Viết một chương trình để lấy URL hiện tại của trang và in ra màn hình console. 
+        // var currentURL = window.location.href;
+        // console.log(currentURL);
+
+    </script>
+
+    <script>
+        // •	Đề bài: Viết một chương trình để lấy phần thông tin của 
+        // URL (gồm protocol, hostname và port) và in ra màn hình console.
+
+        // var protocol = window.location.protocol;
+        // var hostname = window.location.hostname;
+        // var port = window.location.port;
+
+        // console.log(protocol);
+        // console.log(hostname);
+        // console.log(port);
+    </script>
+
+    <script>
+        // •	Đề bài: Viết một chương trình để chuyển hướng
+        //  người dùng đến một URL khác sau một khoảng thời gian nhất định.
+
+        // function redirect(url, delay){
+        //     setTimeout(function(){
+        //         window.location.href = url;
+        //     },delay);
+        // }
+        // // chuyen huong 3 giay
+        // redirect("<https://daca.vn>",3000);
+    </script>
+
+    <script>
+        // •	Đề bài: Viết một chương trình để reload (tải lại)
+        //  trang web sau một khoảng thời gian nhất định.
+
+        // function reloadPage(delay){
+        //     setTimeout(function(){
+        //         window.location.reload();
+        //     },delay);
+        // }
+
+        // reloadPage(1000);
+    </script>
+
+    <script>
+        // •	Đề bài: Viết một chương trình JavaScript để kiểm tra xem trang web có đang chạy trên giao thức an toàn (HTTPS) 
+        // hay không và in kết quả ra màn hình console.
+
+        // var isSecure = window.location.protocol === "https: ";
+        // console.log("An toan: "+ isSecure);
+    </script>
+
+    <script>
+        	// Đề bài: Viết câu lệnh để mở cửa sổ in ấn khi người dùng truy cập vào trang web.
+            // window.print();
+    </script>
+
+    <script>
+        // •	Đề bài: Sử dụng setTimeout để hiển thị đếm ngược.
+
+        // var seconds = 10;
+
+        // function countDown(){
+        //     if(seconds >= 0){
+        //         console.log(seconds);
+        //         seconds--;
+        //         setTimeout(countDown,1000);
+        //     }
+        //     else {
+        //         console.log("Happy new year");
+        //     }
+        // }
+        // countDown();
+    </script>
+
+    <script>
+        // Lấy thông tin về kích thước của cửa sổ trình duyệt
+
+        // console.log(window.innerWidth);
+        // console.log(window.innerHeight);
+    </script>
+
+    <script>
+        // •	Đề bài: Lấy thông tin về vị trí của cửa sổ trình duyệt trên màn hình.
+        // console.log(window.screenX);
+        // console.log(window.screenY);
+    </script>
+
+    <script>
+        // •	Đề bài: Mở một cửa sổ popup mới với kích thước và vị trí tùy chỉnh.
+
+        // window.open(
+        //     "<https://daca.vn>",
+        //     "myWindow",
+        //     "width=1200,height=600,top=100,left=100"
+        // );
+    </script>
+
+    <script>
+        // •	Đề bài: Lấy thông tin về tên trình duyệt.
+
+        console.log(navigator.userAgent);
+    </script>
+
+    <script>
+        // •	Đề bài: Lấy thông tin về ngôn ngữ của trình duyệt đang sử dụng
+
+        console.log(navigator.language);
+    </script>
+
+    <script>
+        // Lấy thông tin về độ phân giải màn hình.
+
+        console.log(window.screen.width);
+        console.log(window.screen.height);
+    </script>
+
+    <script>
+        // •	Đề bài: Kiểm tra xem trình duyệt có đang chạy trên thiết bị di động hay không? 
+        // Nếu có in ra chữ "Mobile", nếu không in ra chữ "PC" trên màn hình console.
+
+        var isMobile = navigator.userAgent.mobile;
+
+        if(isMobile){
+            console.log("Mobile");
+        }else{
+            console.log("PC");
+        }
+
+    </script>
+
+    <script>
+        // •	Đề bài: Lấy danh sách các ngôn ngữ trình duyệt ưu tiên và in ra màn hình console.
+
+        console.log(navigator.languages);
+    </script>
+</body>
+</html>

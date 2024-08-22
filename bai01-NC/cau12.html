@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        let productsJson = `
+        [
+            {
+                "id" : 1,
+                "name" : "iphone 12",
+                "price" : 1200
+             },
+              {
+                "id" : 2,
+                "name" : "Samsung Galaxy s21",
+                "price" : 1000
+             },
+              {
+                "id" : 3,
+                "name" : "Google Pixel 5",
+                "price" : 900
+             }
+        ] 
+        `;
+
+        let productsJs = JSON.parse(productsJson);
+
+        var deleteProduct = (productID) => {
+            const product = productsJs.filter(item => item.id !== productID);
+            productsJson = JSON.stringify(product);
+        }
+        deleteProduct(1);
+        console.log(productsJson);
+    </Script>
+</body>
+
+</html>

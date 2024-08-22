@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- : Giả sử một người đi xe ô tô, có vận tốc là x (km/h). Viết hàm kiểm tra đầu vào x:
+o	Nếu đầu vào x có vận tốc dưới 70km in ra: 'Vận tốc an toàn"
+o	Nếu đầu vào x có vận tốc trên 70km, cứ vượt quá tốc độ mỗi 5km/h bị phạt 30000đ, in ra: "Bạn đã bị phạt: " + Số tiền bị phạt => (x-70)/5 * 30000 chỉ được quá 10 km mới in ra mức phạt
+o	Nếu đầu vào x có vận tốc trên 70km, bị tước giấy phép lái xe, in ra: "Bạn đã bị tước giấy phép lái xe"
+o	Ví dụ: 
+	40 —> Vận tốc an toàn
+	70 —> Vận tốc an toàn
+	75 —> Bạn đã bị phạt: 30000đ
+	99 —> Bạn đã bị phạt: 150000đ
+	120 —> Bạn đã bị tước giấy phép lái xe -->
+
+<script>
+    var speedLimit = 70;
+    var kiloment = 5;
+    var money = 30000;
+
+    function checkSpeedLimit(currSpeed){
+        if(currSpeed<=speedLimit){
+            return "Van toc an toan";
+        }else if(currSpeed > speedLimit){
+            if(kiloment <10){
+                var feeSpeed =Math.floor( (currSpeed - speedLimit)/kiloment)* money;
+                return "Ban bij phat " + feeSpeed;
+            }else{
+                return "Ban bi tuoc giay phep lay xe";
+            }
+
+        }
+    }
+    const test1 = checkSpeedLimit(40);
+    console.log(test1);
+
+    const test2 = checkSpeedLimit(70);
+    console.log(test2);
+
+    const test3 = checkSpeedLimit(75);
+    console.log(test3);
+
+    const test4 = checkSpeedLimit(99);
+    console.log(test4);
+</script>
+
+</body>
+
+</html>

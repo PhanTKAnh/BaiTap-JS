@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- o Theo lý thuyết thì số nguyên dương là tập hợp những số chia hết cho 1 và lớn hơn 0. Tức là dãy số 1, 2, 3 ,4 ,5 ,6 ...
+    chính là các số nguyên dương.
+    o Dùng hàm prompt để tạo ô nhập và lấy ra giá trị từ ô nhập đó.
+    o Viết một hàm kiểm tra số nhập vào có phải số nguyên dương hay không?
+     Nếu đúng alert ra YES.
+     Nếu sai alert ra NO. -->
+
+    <script>
+        function checInteger(num){
+            if(num%1== 0 && num > 0){
+                return true;
+            }else return false;
+        }
+
+        var  n = prompt("Nhap vao 1 so n");
+        n = parseFloat(n);
+      
+
+            if(isNaN(n)){
+                alert("vui long nhap so");
+            }else{
+                if(checInteger(n)){
+                    alert("YES");
+                }else alert("NO");
+            }
+        
+
+
+    </script>
+
+</body>
+</html>

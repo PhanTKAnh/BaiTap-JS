@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- : Viết hàm kiểm tra đầu vào đã cho:
+o	Nếu đầu vào chia hết cho 3 in ra: "Fizz"
+o	Nếu đầu vào chia hết cho 5 in ra: "Buzz"
+o	Nếu đầu vào chia hết cho 3 hoặc 5 in ra: "FizzBuzz"
+o	Nếu đầu vào KHÔNG chia hết cho 3 hoặc 5 in ra: Giá trị đầu vào
+o	Nếu đầu vào không phải là kiểu Number in ra: "Vui lòng nhập số!"
+o	Ví dụ: 
+	"one" —> Vui lòng nhập số!
+	true —> Vui lòng nhập số!
+	9 —> Fizz
+	10 —> Buzz
+	30 —> FizzBuzz
+	11 —> 11 -->
+
+<script>
+    function checkInput(input){
+        if(typeof input ==="number"){
+
+            if(input%3===0 && input%5===0){
+                return "FizzBuzz";     
+            };
+            if(input%3==0){
+                return "Fizz";
+            }else if(input%5===0){
+                return "Buzz";
+            }else{
+                return input;
+            };
+            
+        }else return "vui long nhap so";
+    };
+    
+    const test1 =checkInput("one");
+    console.log(test1);
+
+    const test2 =checkInput(true);
+    console.log(test2);
+
+    const test3 =checkInput(9);
+    console.log(test3);
+
+    const test4 =checkInput(10);
+    console.log(test4);
+
+    const test5 =checkInput(30);
+    console.log(test5);
+
+    const test6 =checkInput(11);
+    console.log(test6);
+</script>
+</body>
+</html>

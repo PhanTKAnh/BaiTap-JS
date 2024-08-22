@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  Viết hàm truyền vào 2 tham số.Sau đó tìm số lớn nhất trong 2 số đó.
+    	Ví dụ: 
+     	10, 5 —> 10
+        10, 15 —> 15
+        100, 100 —> 100
+        
+         -->
+
+    <script>
+
+        function checkMax(a,b){
+            // if(a>b){
+            //     return "so lon nhat la "+a;
+            // }else{
+            //     return "so lom nhat la "+b;
+            // }
+            return a > b ? "so lon nhat "+a : "so lon nhat "+b;
+        }
+        
+
+
+        const test1 = checkMax(10,5);
+        console.log(test1);
+
+        const test2 = checkMax(10,15);
+        console.log(test2);
+
+        const test3 = checkMax(100,100);
+        console.log(test3);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Shvl = 2*R*2*R = 4R**2
+        // ta có hình vuông nhỏ nội tiếp hình tròn và bk dường kình là R
+        // dg chéo hình vuông là d = a căn 2 suy ra 2R = a căn 2 suy ra a = 2/căn 2 R = R căn 2;
+        // Shvn= a**2 = (R căn 2 )**2 = 2R**2
+        // hiệu diện tích 2 hình vuông S = Shvl -Shvn = 4R**2-2R**2 = 2*R**2
+
+        function dienTichHinhVuong(R){
+            var S = 2 * R **2;
+            return S;
+
+        };
+       var test1 = dienTichHinhVuong(5);
+       console.log(test1);
+       var test2 = dienTichHinhVuong(6);
+       console.log(test2);
+        var test3 = dienTichHinhVuong(7);
+        console.log(test3)
+    </script>
+    
+
+
+</body>
+</html>

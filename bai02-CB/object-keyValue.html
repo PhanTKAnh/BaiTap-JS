@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết hàm kiểm tra và chỉ in ra các cặp key, value có value là kiểu string.
+    o	const person = {
+        o	  name: "Le Van A",
+        o	  age: 40,
+        o	  height: 175,
+        o	  country: "Viet Nam",
+        o	  designation: "UI Developer",
+        o	};
+        o	// In ra:
+        o	// name : Le Van A
+        o	// country : Viet Nam
+        o	// designation : UI Developer
+        o	// ---------- -->
+
+    <script>
+        function checkString(string) {
+            for (let key in string) {
+                if (typeof string[key] === "string") {
+                    console.log(key, ":", string[key]);
+
+                }
+            }
+        }
+        const person = {
+            name: "Le Van A",
+            age: 40,
+            height: 175,
+            country: "Viet Nam",
+            designation: "UI Developer",
+        };
+
+        const test1 = checkString(person);
+        console.log(test1);
+
+        const technology = {
+            name: "JavaScipt",
+            version: 6,
+            purpose: "Scripting language for Web",
+            developer: "Netscape Corporation",
+        };
+
+        const test2 = checkString(technology);
+        console.log(test2);
+
+    </script>
+
+</body>
+
+</html>

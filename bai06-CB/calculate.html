@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* o	Xây dựng một ứng dụng máy tính đơn giản sử dụng 
+        DOM javascript để xử lý các sự kiện nhấn nút: cộng, trừ, nhân, chia */
+        .box{
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <div class="box">
+        <h5>May tinh</h5>
+        <input type="number" placeholder="nhap so thu nhat" id="num1">
+        <input type="number" placeholder="nhap so thu hai" id="num2">
+        <br>
+        <button onclick="add()">Cong</button>
+        <button onclick="subtract()">Tru</button>
+        <button onclick="multiply()">Nhan</button>
+        <button onclick="divide()">Chia</button>
+        <br>
+        <h3>Ket qua: <span id="result"></span></h3>
+    </div>
+    <script>
+        function add(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const result = num1 + num2;
+            document.getElementById("result").textContent=result;
+
+        }
+        function subtract(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const result = num1 -num2;
+            document.getElementById("result").textContent=result;
+
+        }
+        function multiply(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const result = num1*num2;
+            document.getElementById("result").textContent=result;
+
+        }
+        function divide(){
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const result = num1 /num2;
+            document.getElementById("result").textContent=result;
+
+        }
+
+    </script>
+</body>
+</html>

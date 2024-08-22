@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- o	Tạo một biểu đồ cột và sử dụng JavaScript để thay đổi chiều cao của các cột dựa trên dữ liệu được cung cấp. -->
+    <!-- o	Dữ liệu:
+    o	const data = [10, 20, 15, 30, 25]; -->
+
+    <div id="chart"></div>
+    <style>
+        .bar{
+            width: 30px;
+            margin-right: 10px;
+            background-color: #3F87F5;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    </style>
+    <script>
+        const data = [10,20,15,30,25,30];
+
+        const chart = document.getElementById("chart");
+
+        for (let i = 0; i< data.length; i++) {
+          const bar = document.createElement("div");
+          bar.className = "bar";
+          bar.style.height = data[i] + "px";
+          chart.appendChild(bar);
+           
+        }
+    </script>
+    
+</body>
+</html>

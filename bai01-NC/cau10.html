@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- o	Hãy tạo một mảng mới chứa tên của tất cả các người trong mảng ban đầu: ["Lê Văn A", "Nguyễn Thị B", "Đỗ Văn C"]. -->
+
+    <script>
+        const dataJSON = `[
+        {
+            "name" : "Le Van A",
+            "age" : 30,
+            "skills": ["JavaScript", "HTML", "CSS"]
+        },
+        {
+        "name": "Nguyễn Thị B",
+        "age": 25,
+          "skills": ["Python", "Java", "C++"]
+        },
+          {
+	      "name": "Đỗ Văn C",
+	      "age": 35,
+	      "skills": ["Ruby", "PHP", "SQL"]
+	    }
+
+        
+        ]`;
+
+        console.log(dataJSON);
+        const dataJS = JSON.parse(dataJSON);
+        console.log(dataJS);
+        const nameArray = dataJS.map((obj)=>obj.name);
+        console.log(nameArray);
+    </script>
+</body>
+
+</html>

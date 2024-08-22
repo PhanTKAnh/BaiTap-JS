@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- o	Tạo một thanh trượt và sử dụng JavaScript để thay đổi giá trị của thanh trượt và 
+    cập nhật nội dung trên trang dựa trên giá trị của thanh trượt. -->
+
+    <input type="range" id="slider" min="1" max="100" value="50">
+    <p id="display-value">50</p>
+    <script>
+        const slider = document.getElementById("slider");
+        const displayValue = document.getElementById("display-value")
+
+        slider.addEventListener("input",function(){
+            displayValue.textContent = slider.value;
+        })
+    </script>
+</body>
+</html>

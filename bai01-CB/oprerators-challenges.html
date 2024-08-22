@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var a = 10;
+        var b = "20";
+        var c =80;
+
+        var test1 = ++a + +b++ + +c++ - +a++ ; //11 + (+20) + (+80) - (+11)
+        console.log(test1);
+        console.log(a,b,c);//a =12 b=21,c=81
+        console.log("--------------------------");
+
+        var test2 = ++a + -b + +c++ - -a++ + +a;  //13 + (-21) + (+81)- (-13) +(+14)=100
+        console.log(test2);
+        console.log(a,b,c);//a = 14 ,b = 21, c=82
+        console.log("-------------------------");
+
+        var test3 = --c + +b + --a * +b++ - +b * a + --a - +true; //81 + (+21) +13*(+21) - (+ 22)*13 + 12 - (+1) =100
+        console.log(test3);
+        console.log(a,b,c)//a = 12, b=22 , c= 81
+        
+
+
+    </script>
+</body>
+</html>

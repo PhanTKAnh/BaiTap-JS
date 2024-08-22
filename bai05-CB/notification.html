@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Sử dụng setTimeout để tự động ẩn nó sau một khoảng thời gian -->
+
+    <div class="notification" id="notification">
+        Thong bao ...
+    </div>
+    <style>
+        .notification {
+            background-color: #66b347;
+            display: inline-block;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding:10px 20px;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        // var notification = document.getElementById("notification");
+
+        // function ShowNotification(){
+        //     setTimeout(function(){
+        //         notification.style.display="none";
+        //     },3000);
+        // }
+        // ShowNotification();
+    </script>
+    <!-- : Sử dụng setTimeout để làm mờ thông báo sau một khoảng thời gian. -->
+
+    <script>
+
+        var notification = document.getElementById("notification");
+
+        function fadeOut(){
+            var opacity = 1;
+            var timer = setInterval(function(){
+                if(opacity <= 0){
+                    clearInterval(timer);
+                    notification.style.display = "none";
+                }
+                notification.style.opacity = opacity;
+                    opacity -= 0.1;
+            },100);
+        }
+        setTimeout(fadeOut,3000);
+    </script>
+</body>
+</html>

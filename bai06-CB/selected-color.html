@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- o	Tạo một bộ chọn màu bằng cách sử dụng DOM.
+     Cho phép người dùng chọn một màu từ một bảng màu và hiển thị giá trị màu đã chọn. -->
+     <style>
+        .color-preview{
+            width: 120px;
+            height: 60px;
+        }
+     </style>
+     <input type="color" id="color-picker"/>
+     <p>xem truoc: </p>
+     <div id="color-preview" class="color-preview"></div>
+
+     <script>
+        const colorPicker = document.querySelector("#color-picker");
+        const colorPreview = document.querySelector("#color-preview");
+
+        colorPicker.addEventListener("change", function(){
+            const selectedColor = colorPicker.value;
+            colorPreview.style.backgroundColor = selectedColor;
+        })
+
+
+     </script>
+</body>
+</html>
